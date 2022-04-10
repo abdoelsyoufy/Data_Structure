@@ -1,0 +1,29 @@
+primitive DS such as (int , float char)
+
+non primitive DS such as linear DS (Stack , Queue , linked list , array)
+                          non linear DS (Tree , Graph)
+
+
+
+complexity {
+
+best case ---> omega() ---> if you founded the result in the first this is consider best case.
+average case ---> theta() ---> if you founded the result in the middle this is consider average case.
+worst case ---> Big O() ---> if you founded the result in the last this is consider worst case.
+
+Operation and Condition will take constant time.
+
+
+for(i in 1..10)  ---> complexity is O(1) = n*(n+1)/2
+
+for(i in 1..n)  ---> complexity is O(n)
+
+for(i in 1..n step = i*2)  ---> complexity is O(log n)
+
+for(i in 1..n)  ---> complexity is O(n log n)
+{
+for(i in 1..k step = i*2)
+}
+
+
+}
