@@ -1,3 +1,5 @@
+package stack
+
 /*
 * last in first out
 * apps on stack
@@ -47,6 +49,37 @@ class CustomStack(private val size: Int) {
             return -1
         }
     }
+
+}
+
+
+class MinStack() {
+
+    private val stackItems: ArrayList<Int>
+    private var top: Int
+
+    init {
+        this.stackItems = arrayListOf<Int>()
+        top = -1
+    }
+
+    fun push(item: Int) =  stackItems.add(++top , item)
+
+    fun pop() {
+        top = top -1
+    }
+
+    fun top(): Int =  stackItems[top]
+
+    fun getMin():Int{
+        var min = stackItems[top]
+
+       for(index in 0 until top){
+           if (stackItems[index] < min ) min = stackItems[index]
+       }
+        return min
+    }
+
 }
 
 fun main() {
